@@ -1,5 +1,6 @@
- FROM kreable/php70
+FROM kreable/php70
 
- RUN \
-   apt-get install php7.0-zip
-
+RUN \
+  apt-get update
+  apt-get install -y php7.0-zip
+  php7.0-fpm
